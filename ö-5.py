@@ -1,0 +1,5 @@
+print("********Öğrenci Bilgileri *******")
+print("Adı     : Mustafa Erhan")
+print("Soyadı  : DÖNMEZ")
+print("Numarası: 999")
+print("*********************************")
