@@ -1,5 +1,5 @@
 # phyton-al-malar
 ## ekran görüntüsü
 
-<img src="resim\image.png">
-<img height="100" src="resim\image.png">
+<img src="resimler\image.png">
+<img height="100" src="resimler\image.png">
