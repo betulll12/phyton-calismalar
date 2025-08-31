@@ -1,0 +1,30 @@
+def selamla(): print("Merhaba"*2)
+def anamenu():
+    #print("╔"+"═"*20+"╗")
+    print("╔═════════════════════╗")
+    print("║ VEKTOREL APP        ║")
+    print("║                     ║")
+    print("║  1-Hesaplamalar     ║")
+    print("║  2-Oyunlar          ║")
+    print("║  3-Çizimler         ║")
+    print("║  4-                 ║")
+    print("║  5-                 ║")
+    print("║  6-                 ║")
+    print("║  7-                 ║")
+    print("║  8-                 ║")
+    print("║  9-                 ║")
+    print("║  10-                ║")
+    print("║    Seçimiz nedir?   ║")
+    print("╚═════════════════════╝")
+    secim = input()
+    print("Seçiminiz:",secim,"idi.")
+    if secim <"1" or secim>"10":
+        print("seçim 1 ile 10 arası olmalı")
+        anamenu()
+    if secim == "1":
+        print("Hesaplamaları seçtiniz")
+        import proje_oyunlar_menusu
+    if secim == "2":
+        print("Oyunları seçtiniz")
+    #selamla()
+anamenu()
