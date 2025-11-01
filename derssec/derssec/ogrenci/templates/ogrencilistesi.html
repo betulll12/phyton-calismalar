@@ -1,0 +1,47 @@
+{% extends 'ogrenciana.html' %}
+{% load static %}
+<!-- ogrencilistesi.html -->
+
+
+{% block 'liste' %}
+<center>
+    <h3>Öğrenci listesi</h3>
+    Öğrenci listesi burada görünecek.
+
+   <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">TC</th>
+      <th scope="col">İsim Soyad</th>
+      <th scope="col">Aciklama</th>
+       <th scope="col"></th>
+    </tr>
+    </tr>
+  </thead>
+  <tbody>
+      {% for ogr in ogrencilistesi %} <!-- dikkat, : işareti yok -->
+    <tr>
+
+      <th scope="row">{{ogr.id}}</th>
+      <td>{{ogr.TC}}</td>
+      <td>{{ogr.AdiSoyadi}}</td>
+      <td>{{ogr.Aciklama}}</td>
+    <td>
+    <a href="" type="button" class="btn btn-primary">Detay</a>
+    <a href="" type="button" class="btn btn-secondary">Düzenle</a>
+    <a href="button" class="btn btn-success">Sil</a>
+    {% endfor %}
+    
+  </tbody>
+</table>
+</center>
+
+    <br>
+    <a href="/ogrenci/">
+        <img height="50" src="{% static 'img/geri.png' %}" alt="">
+    </a>
+{% endblock %}
+
+
+

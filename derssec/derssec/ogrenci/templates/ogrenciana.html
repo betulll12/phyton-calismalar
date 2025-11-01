@@ -1,0 +1,70 @@
+{% extends 'iceren.html' %}
+{% load static%}
+
+
+
+
+{% block 'icerik' %}
+<center>
+    <link rel="stylesheet" href="{% static 'cssler/abc.css' %}">
+    <h1>Öğrenciler Sayfası</h1>
+    <a href="/">Ana sayfa</a>
+
+
+    <div>
+        <h2>Öğrenci listesi</h2>
+        <a href="/ogrenci/liste">
+            <img width="100" src="{% static 'img/liste.png' %}"/>
+            <br>
+            Listeyi göster
+        </a>
+    </div>
+    <br>
+
+
+    <div>
+        <h2>Öğrenci kaydı</h2>
+        <a href="/ogrenci/ekle">
+            <img width="100" src="{% static 'img/ekle.png' %}"/>
+            <br>
+            Öğrenci ekle
+        </a>
+    </div>
+    {% block 'liste' %}
+    {% endblock %}
+</center>
+
+
+<style>
+    h1{
+        color: coral;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h2{
+        color: royalblue;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    a{
+        text-decoration: none;
+
+
+    }
+    center div1{
+        border-style: solid;
+        border-color: gray;
+        border-radius: 10px;
+        width: 30%;
+        box-shadow: 10px 10px 20px grey;
+        margin: 10px;
+        padding: 10px;
+        display: inline-block;
+    }
+    center div1:hover{
+        background-color: blanchedalmond;
+        /* border-style: double; */
+        border-color: black;
+    }
+</style>
+
+
+{% endblock %}
