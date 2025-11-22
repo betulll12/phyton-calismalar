@@ -2,7 +2,7 @@
 # pip install pandas
 import pandas as pd
 # df = pd.read_csv("dataframes/Advertising.csv")
-df = pd.read_csv("puanlar1.txt")
+df = pd.read_csv("h18_1 NLP/puanlar1.txt")
 # print("\n\nData frame:\n",df)
 # pip install scikit-learn
 from sklearn.linear_model import LinearRegression
