@@ -2,7 +2,7 @@
 import tensorflow as tf, numpy as np, matplotlib.pyplot as plt
 # import warnings; warnings.filterwarnings("ignore")
 from tensorflow.keras.datasets import mnist
-(x_train, y_train), (x_test, y_test) = mnist.load_data() # x_train, y_train etiketleri
+(x_train, y_train), (x_test, y_test) = tf.keras.datasets.fashion_mnist.load_data()# x train, y train etiket
 
 plt.figure(figsize=(4,5)) # 4x5=20 lik bir resim göstermek için
 def resimleri_goster(adet):
